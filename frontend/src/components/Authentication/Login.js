@@ -61,7 +61,8 @@ const Login = () => {
 
       setLoading(false);
       // navigate("/chats");
-      history.push("/chats");
+      // history.push("/chats");
+      history.push("https://chat-with-me-6hn3.vercel.app/");
     } catch (error) {
       toast({
         title: "Error Occured!",
