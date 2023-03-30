@@ -1,0 +1,1 @@
+{"name":"Local: test2","url":"d:\\Chat-With-Me\\.vscode\\test2.cpp","tests":[{"id":1676289299416,"input":"5 3\n5 4 3 2 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Chat-With-Me\\.vscode\\test2.cpp","group":"local","local":true}
