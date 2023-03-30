@@ -24,13 +24,13 @@ app.use("/api/message", messageRoutes);
 
 // --------------------------deployment------------------------------
 
-// const __dirname1 = path.resolve();
+const __dirname1 = path.resolve();
 
-const __dirname = path.resolve();
+// const __dirname = path.resolve();
 
-app.use(express.static(path.join(__dirname, "./frontend/build")));
+app.use(express.static(path.join(__dirname1, "./frontend/build")));
 app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "./frontend/build/index.html"));
+  res.sendFile(path.join(__dirname1, "./frontend/build/index.html"));
 });
 
 // if (process.env.NODE_ENV === "production") {
