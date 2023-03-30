@@ -16,9 +16,9 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
 
   const history = useHistory();
-  const navigate = useNavigate();
-  
-// const ENDPOINT = "https://mern-let-us-chat.herokuapp.com/";
+  // const navigate = useNavigate();
+
+  // const ENDPOINT = "https://mern-let-us-chat.herokuapp.com/";
   const submitHandler = async () => {
     setLoading(true);
     if (!email || !password) {
@@ -35,21 +35,19 @@ const Login = () => {
 
     // console.log(email, password);
     try {
-   
       const config = {
         header: {
           "Content-type": "application/json",
         },
       };
 
-          console.log(email);
+      console.log(email);
 
       const { data } = await axios.post(
         "/api/user/login",
         { email, password },
         config
       );
-      
 
       // console.log(JSON.stringify(data));
       toast({
@@ -60,10 +58,10 @@ const Login = () => {
         position: "bottom",
       });
       localStorage.setItem("userInfo", JSON.stringify(data));
-      
+
       setLoading(false);
-      navigate("/chats");
-      // history.push("/chats");
+      // navigate("/chats");
+      history.push("/chats");
     } catch (error) {
       toast({
         title: "Error Occured!",
@@ -72,7 +70,6 @@ const Login = () => {
         duration: 5000,
         isClosable: true,
         position: "bottom",
-        
       });
       // console.log(error.response.data.message);
       setLoading(false);
@@ -85,7 +82,8 @@ const Login = () => {
         <FormLabel color="white">Email Address</FormLabel>
         <Input
           value={email}
-          type="email" color="white" 
+          type="email"
+          color="white"
           placeholder="Enter Your Email Address"
           onChange={(e) => setEmail(e.target.value)}
         />
@@ -94,7 +92,8 @@ const Login = () => {
         <FormLabel color="white">Password</FormLabel>
         <InputGroup size="md">
           <Input
-            value={password} color="white" 
+            value={password}
+            color="white"
             onChange={(e) => setPassword(e.target.value)}
             type={show ? "text" : "password"}
             placeholder="Enter password"
