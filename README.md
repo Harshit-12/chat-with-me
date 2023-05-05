@@ -10,8 +10,9 @@ Chat With Me is a real time Full Stack real-time chat application where users ca
 
 ## Login Page
 ![Login-Page](https://github.com/Harshit-12/chat-with-me/blob/e0ba7eb3d94a637bb3192857d063a01a58f17fe4/Login-Page.png)
+
 ## Registration Page
-![Registration-Page](https://github.com/Harshit-12/Chat-With-Me/blob/1bf7a87d46a1649b1f7cfd539026624f0a127185/Registration-Page.png)
+![Registration-Page](https://github.com/Harshit-12/chat-with-me/blob/c941bc13cc5d65e35b973ca76feb6586e3e22053/Registration-Page.png)
 
 ## User Dashboard
 ![User-Dashboard](https://github.com/Harshit-12/Chat-With-Me/blob/1bf7a87d46a1649b1f7cfd539026624f0a127185/User-Dashboard.png)
